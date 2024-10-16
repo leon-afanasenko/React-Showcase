@@ -1,0 +1,239 @@
+.discountedProductsPage {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.discountedProductsPage h3 {
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+
+.productByCategoryPage h3 {
+  margin-bottom: 20px;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.productItem {
+  max-height: 422px;
+  max-width: 312px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  position: relative;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.productItem:hover {
+  transform: scale(1.02);
+}
+
+.productImage {
+  max-width: 100%;
+  height: 350px;
+  border-radius: 12px;
+}
+
+.placeholderImage {
+  width: 100%;
+  height: 150px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 63px;
+  height: 34px;
+  background-color: #007bff;
+  color: #fff;
+  padding-left: 6px;
+  padding-top: 3px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 500;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    background-color: #007bff;
+  }
+
+  50% {
+    background-color: #ff0000;
+  }
+}
+
+.productTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 8px;
+}
+
+.originalPrice {
+  font-size: 16px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.productDescription {
+  height: 24px;
+  font-size: 14px;
+  color: #333;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productAction {
+  position: absolute;
+  top: 210px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.productAction:hover {
+  opacity: 1;
+}
+
+.addedModal.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.filterBar {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filterSection {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #282828;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+body.dark-mode .filterBar p {
+  color: #8b8b8b;
+}
+
+body.dark-mode .filterCheckBox {
+  color: #8b8b8b;
+}
+
+.filterSection input,
+.filterSection select {
+  width: 112px;
+  height: 36px;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #333;
+  padding: 0;
+  text-align: left;
+}
+
+.filterSection input::placeholder {
+  display: flex;
+  align-items: center;
+  color: #8b8b8b;
+  font-size: 16px;
+  padding-left: 16px;
+}
+
+.filterCheckBox {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.filterCheckBox input {
+  width: 27px;
+  margin-left: 8px;
+}
+
+select {
+  width: 200px;
+  color: #8b8b8b;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 992px) {
+  .productGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .productGrid {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
+
+  .productItem {
+    row-gap: 21px;
+  }
+
+  .productByCategoryPage h3 {
+    text-align: center;
+  }
+
+  .discountedProductsPage h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}

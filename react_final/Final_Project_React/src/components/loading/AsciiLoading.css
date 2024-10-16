@@ -1,0 +1,34 @@
+.ascii-loader {
+  font-family: "Courier New", monospace;
+  white-space: pre;
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 1.2;
+  text-align: center;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.ascii-loader.fade-out {
+  animation: fadeOut 1s forwards;
+}

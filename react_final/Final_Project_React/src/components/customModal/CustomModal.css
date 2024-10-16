@@ -1,0 +1,119 @@
+.Modal {
+  width: 40vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #0d50ff;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.Modal h2 {
+  font-size: 44px;
+}
+
+.Modal p {
+  font-size: 20px;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.modalCloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modalCloseButton:hover {
+  color: #ccc;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.modalButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modalButton:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1200px) {
+  .Modal h2 {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .Modal p {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .Modal h2 {
+    font-size: 24px;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .Modal p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .Modal {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Modal h2 {
+    text-align: left;
+    font-size: 16px;
+    padding: 5px;
+    white-space: nowrap;
+  }
+
+  .Modal p {
+    font-size: 14px;
+  }
+
+  .Modal {
+    flex-direction: column;
+    max-height: 300px;
+  }
+}

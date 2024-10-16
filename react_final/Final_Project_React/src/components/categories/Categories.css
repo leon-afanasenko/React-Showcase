@@ -1,0 +1,150 @@
+.categoriesPage {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.categoriesPageHeader {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  padding: 0;
+}
+
+.categoriesHeaderTitle {
+  font-size: 64px;
+  margin: 40px 10px;
+}
+
+body.dark-mode .categoriesHeaderTitle {
+  color: #dddddd;
+}
+
+.btnLine {
+  width: 16px;
+  height: 50%;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoriesPageGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.categoriesPageItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoriesPageImage {
+  max-width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.categoriesPageItem:hover .categoriesPageImage {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid #0f0f0f;
+}
+
+.placeholderImage {
+  width: 100%;
+  height: 350px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.categoriesPageTitle {
+  margin-top: 10px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Montserrat", sans-serif;
+}
+
+.categoriesPageBtn {
+  border: 1px solid #dddddd;
+  color: #8b8b8b;
+  border-radius: 6px;
+  background: transparent;
+  white-space: nowrap;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.categoriesPageBtn.active {
+  font-weight: 500;
+  color: #282828;
+}
+
+body.dark-mode .categoriesPageBtn.active {
+  color: #edeeee;
+}
+
+.categoriesPageBtn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .categoriesPageGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .categoriesPageGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .categoriesPageHeader {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .categoriesPageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .categoriesPageBtn {
+    display: none;
+  }
+
+  .categoriesPage h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
