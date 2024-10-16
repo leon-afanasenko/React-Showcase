@@ -1,0 +1,164 @@
+.carousel-container {
+  display: flex;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.category-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.category-item:hover .category-image {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid #333;
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 350px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: #666;
+  font-size: 1.2em;
+}
+
+.category-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+body.dark-theme .category-title {
+  color: #fff;
+}
+
+.custom-dot-list-style {
+  display: none;
+}
+
+.carousel-container .react-multiple-carousel__arrow {
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.carousel-container .react-multiple-carousel__arrow--left {
+  left: 0;
+}
+
+.carousel-container .react-multiple-carousel__arrow--right {
+  right: 0;
+}
+
+.carousel-container .react-multiple-carousel__arrow:hover {
+  background-color: #555;
+  opacity: 1;
+}
+
+.line {
+  height: 50%;
+  border-bottom: 1px solid #dddddd;
+  width: 80%;
+  margin-left: 32px;
+}
+
+.carouselHeader {
+  display: flex;
+  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding-bottom: 0;
+}
+
+.carouselHeader h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.carouselBtn {
+  border: 1px solid #dddddd;
+  color: #8b8b8b;
+  border-radius: 6px;
+  background: transparent;
+  white-space: nowrap;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.carouselBtn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .carouselBtn {
+  color: #edeeee;
+}
+
+@media (max-width: 1400px) {
+  .carouselHeader {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .carouselHeader {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .carouselHeader {
+    margin: 0 40px;
+  }
+
+  .carouselHeader h3 {
+    font-size: 44px;
+  }
+
+  .carouselBtn {
+    padding: 5px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carouselHeader h3 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carouselHeader h3 {
+    font-size: 24px;
+  }
+
+  .carousel {
+    margin-top: 20px;
+  }
+}

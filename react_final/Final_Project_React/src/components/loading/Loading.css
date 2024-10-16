@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+
+.loadBox {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url("/src/assets/gg.jpeg") no-repeat center center;
+  background-size: cover;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.loadBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.load {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  font-size: clamp(3rem, 5vw, 6rem);
+  font-family: "Rubik Doodle Shadow", cursive;
+  color: #fff;
+  letter-spacing: 2px;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8), 0 0 12px rgba(0, 0, 0, 0.8),
+    0 0 16px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.8),
+    0 0 24px rgba(0, 0, 0, 0.8), 0 0 28px rgba(0, 0, 0, 0.8),
+    0 0 32px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  animation: moveIn 1.5s ease-out forwards;
+  position: relative;
+}
+
+@keyframes moveIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translate(0, 0);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.3) translate(0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translate(0, 0);
+  }
+}
+
+@media (max-width: 1000px) {
+  .load {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .load {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .load {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .load {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .load {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .load {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .load {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .load {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .load {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .load {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .load {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .load {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .load {
+    font-size: 1rem;
+  }
+}

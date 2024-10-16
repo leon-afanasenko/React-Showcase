@@ -1,0 +1,39 @@
+.button {
+  font-family: "Montserrat", sans-serif;
+  width: 284px;
+  height: 58px;
+  border-radius: 6px;
+  background-color: #0d50ff;
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #282828;
+}
+
+.button.clicked {
+  background-color: white;
+  color: #282828;
+  border: 1px solid #282828;
+}
+
+@media (max-width: 1200px) {
+  .button {
+    width: 150px;
+    font-size: 18px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .button {
+    height: 50px;
+    font-size: 14px;
+    white-space: nowrap;
+    padding: 0;
+  }
+}

@@ -1,0 +1,158 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 128px;
+  padding: 10px 20px;
+  background-color: var(--header-background-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
+}
+
+.header__logo img {
+  height: 50px;
+  transition: all 0.5s ease;
+}
+
+.header__logo:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.header__nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: var(--header-link-color);
+  font-weight: 500;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.header__link:hover {
+  color: #0d50ff;
+}
+
+.header__cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cartIcon {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.cartItemCount {
+  position: absolute;
+  top: 8px;
+  right: 18px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+}
+
+body.light-mode .header {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light-mode .header__link {
+  color: #000000;
+}
+
+body.light-mode .header__link:hover {
+  color: #0d50ff;
+}
+
+body.dark-mode .header {
+  background-color: #302f2f;
+  color: #ffffff;
+}
+
+body.dark-mode .header__link {
+  color: #ffffff;
+}
+
+body.dark-mode .header__link:hover {
+  color: #0d50ff;
+}
+
+body.dark-mode .header__cart img {
+  filter: invert(100%);
+}
+
+@media (max-width: 768px) {
+  .header__link {
+    font-size: 16px;
+  }
+  .cartIcon {
+    max-width: 30px;
+    max-height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .header__link {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .header__nav {
+    gap: 15px;
+  }
+  .header__logo img {
+    width: 50px;
+  }
+}
+
+.telegram-icon-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.telegramIcon {
+  font-size: 40px;
+  color: #0088cc;
+  transition: color 0.3s ease;
+}
+
+.telegram-label {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: color 0.3s ease;
+}
+
+.telegram-icon-container:hover .telegram-label {
+  color: rgba(0, 0, 0, 0.6);
+}

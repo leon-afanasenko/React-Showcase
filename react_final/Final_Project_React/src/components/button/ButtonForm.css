@@ -1,0 +1,54 @@
+.buttonForm {
+  padding: 16px 195px;
+  white-space: nowrap;
+  height: 58px;
+  border-radius: 6px;
+  background-color: white;
+  color: #282828;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttonForm:hover {
+  background-color: #282828;
+  color: white;
+}
+
+.buttonForm.clicked {
+  background-color: #f1f3f4;
+  color: blue;
+  border: 1px solid #282828;
+}
+
+@media (max-width: 1400px) {
+  .buttonForm {
+    padding: 16px 195px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .buttonForm {
+    padding: 16px 180px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .buttonForm {
+    font-size: 16px;
+    padding: 16px 150px;
+  }
+}
+
+@media (max-width: 578px) {
+  .buttonForm {
+    padding: 16px 90px;
+    height: auto;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

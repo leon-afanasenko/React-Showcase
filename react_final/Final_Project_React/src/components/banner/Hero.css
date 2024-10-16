@@ -1,0 +1,66 @@
+@keyframes fadeInSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-size: 96px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.heroBox h1 {
+  position: relative;
+  padding-top: 5%;
+  animation: fadeInSlideDown 2s ease-out;
+}
+
+.heroBox {
+  max-width: 100%;
+  background-image: url("../../assets/banner.png");
+  background-position: center;
+  background-size: cover;
+  padding: 0px 0px 200px 100px;
+  transition: all 0.2s ease;
+  font-family: "Montserrat", sans-serif;
+  max-height: 800px;
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroBox {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 34px;
+  }
+}
