@@ -1,0 +1,21 @@
+.Menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.MenuCategory {
+  margin-bottom: 40px;
+}
+
+.MenuCategory h2 {
+  font-size: 24px;
+  border-bottom: 2px solid #ff7e5f;
+  margin-bottom: 20px;
+}
+
+.MenuItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}

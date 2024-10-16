@@ -1,0 +1,57 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.menu-nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border-bottom: 2px solid #fff;
+}
+
+.menu-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-nav li {
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.menu-nav li.active {
+  color: #ff7e5f;
+}
+
+.menu-nav li:hover {
+  color: #feb47b;
+}
+
+@media (max-width: 1126px) {
+  .menu-nav ul {
+    flex-direction: column;
+  }
+
+  .menu-nav li {
+    margin-bottom: 10px;
+  }
+}

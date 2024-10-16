@@ -1,0 +1,191 @@
+
+.app.light {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.app.dark {
+  background-color: #181818;
+  color: #e0e0e0;
+}
+
+
+.theme-switch-button {
+  background-color: #ffd700;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-switch-button:hover {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+
+.header.light,
+.footer.light {
+  background-color: #333;
+  color: #ffd700;
+}
+
+.header.dark,
+.footer.dark {
+  background-color: #181818;
+  color: #ffd700;
+}
+
+.nav ul li a.light,
+.social-icons a.light {
+  color: #fff;
+}
+
+.nav ul li a.dark,
+.social-icons a.dark {
+  color: #ffd700;
+}
+
+.nav ul li a.light:hover,
+.social-icons a.light:hover {
+  color: #ffd700;
+}
+
+.nav ul li a.dark:hover,
+.social-icons a.dark:hover {
+  color: #fff;
+}
+
+.hero-section.light {
+  background-color: #ffd700;
+  color: #333;
+}
+
+.hero-section.dark {
+  background-color: #333;
+  color: #ffd700;
+}
+
+.cta-button.light {
+  background-color: #333;
+  color: #fff;
+}
+
+.cta-button.dark {
+  background-color: #ffd700;
+  color: #333;
+}
+
+.cta-button.light:hover {
+  background-color: #555;
+  color: #ffd700;
+}
+
+.cta-button.dark:hover {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+.services-section.light {
+  background-color: #f9f9f9;
+}
+
+.services-section.dark {
+  background-color: #222;
+}
+
+.service-card.light {
+  background-color: #fff;
+  color: #333;
+}
+
+.service-card.dark {
+  background-color: #333;
+  color: #ffd700;
+}
+
+.service-content.light h3,
+.service-content.light p {
+  color: #333;
+}
+
+.service-content.dark h3,
+.service-content.dark p {
+  color: #ffd700;
+}
+
+.testimonials-section.light {
+  background-color: #f0f0f0;
+}
+
+.testimonials-section.dark {
+  background-color: #222;
+}
+
+.testimonial-item.light p {
+  color: #333;
+}
+
+.testimonial-item.dark p {
+  color: #ffd700;
+}
+
+.contact-section.light {
+  background-color: #fff;
+  color: #333;
+}
+
+.contact-section.dark {
+  background-color: #181818;
+  color: #ffd700;
+}
+
+.contact-form.light input,
+.contact-form.light textarea {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.contact-form.dark input,
+.contact-form.dark textarea {
+  background-color: #333;
+  color: #ffd700;
+  border: 1px solid #555;
+}
+
+.contact-form.light input:focus,
+.contact-form.light textarea:focus {
+  border-color: #ffd700;
+}
+
+.contact-form.dark input:focus,
+.contact-form.dark textarea:focus {
+  border-color: #ffa500;
+}
+
+.contact-form.light button {
+  background-color: #ffd700;
+  color: #333;
+}
+
+.contact-form.dark button {
+  background-color: #333;
+  color: #ffd700;
+}
+
+.contact-form.light button:hover {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+.contact-form.dark button:hover {
+  background-color: #ffa500;
+  color: #fff;
+}

@@ -1,0 +1,39 @@
+.section {
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bg-primary {
+  background-color: #333;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.hover\:bg-accent:hover {
+  background-color: #286f6c;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

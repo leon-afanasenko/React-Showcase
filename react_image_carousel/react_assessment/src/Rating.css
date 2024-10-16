@@ -1,0 +1,42 @@
+.rating-container {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.sample-photo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.rating-image {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.rating-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.rating-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.rating-buttons button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+nav {
+  background-color: #37474f;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #263238;
+  width: 300px;
+  height: calc(100vh - 60px);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.nav-menu--open {
+  transform: translateX(0);
+  box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu span {
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.nav-menu__item {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-menu__item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.submenu {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.submenu__item {
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submenu__item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+form {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: calc(100% - 16px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+form button,
+.buttons button {
+  padding: 12px 20px;
+  background-color: #37474f;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  display: block;
+}
+
+form button:hover,
+.buttons button:hover {
+  background-color: #263238;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.buttons--hidden {
+  display: none;
+}
+
+.notifications-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.notification {
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.notification__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.notification__data {
+  flex: 1;
+}
+
+.notification__title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.notification__text {
+  font-size: 14px;
+}
+
+.notification__close {
+  cursor: pointer;
+}
+
+.notification--success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.notification--info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.notification--error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.notification--hidden {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

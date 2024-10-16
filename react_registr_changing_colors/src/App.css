@@ -1,0 +1,309 @@
+.sliding-container {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.form-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
+.sign-in-container,
+.sign-up-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+  left: 0;
+  z-index: 2;
+}
+
+.sign-up-container {
+  right: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+
+.right-panel-active .sign-up-container {
+  transform: translateX(-100%);
+  opacity: 1;
+  z-index: 5;
+}
+
+.form-container form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form-container input {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+  border-color: #ff416c;
+  outline: none;
+}
+
+.form-container .social-container {
+  margin: 20px 0;
+}
+
+.form-container .social-container a {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.form-container .social-container a:hover {
+  background-color: #eee;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+.overlay {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #ffffff;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.overlay-left,
+.overlay-right {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  transition: transform 0.6s ease-in-out;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.overlay-left {
+  transform: translateX(-20%);
+}
+
+.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+.overlay-left h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.overlay-left p {
+  font-size: 1.2rem;
+  max-width: 80%;
+}
+
+.overlay-right h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.overlay-right p {
+  font-size: 1.2rem;
+  max-width: 80%;
+}
+
+.form-container .sign-in-container form button {
+  border-radius: 20px;
+  border: 1px solid #2196f3;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 45px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-container .sign-in-container form button:hover {
+  background-color: #1976d2;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.form-container .sign-up-container form button {
+  border-radius: 20px;
+  border: 1px solid #2196f3;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 45px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-container .sign-up-container form button:hover {
+  background-color: #1976d2;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-left .ghost {
+  border-radius: 20px;
+  border: 1px solid #2196f3;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 45px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.overlay-left .ghost:hover {
+  background-color: #1976d2;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-right .ghost {
+  border-radius: 20px;
+  border: 1px solid #2196f3;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 45px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.overlay-right .ghost:hover {
+  background-color: #1976d2;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.welcome-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: #f5f5f5;
+  text-align: center;
+  color: #333;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-slide h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #222;
+}
+
+.welcome-slide p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #555;
+}
+
+.welcome-slide button {
+  border-radius: 30px;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.welcome-slide button:hover {
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-slide h1,
+.welcome-slide p,
+.welcome-slide button {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,72 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: #111;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #0ff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+.error {
+  color: #ff6f6f;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.submitButton {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0ff;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.submitButton:hover {
+  background-color: #0cc;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+.submitButton:active {
+  background-color: #0aa;
+}

@@ -1,0 +1,74 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 900px;
+  padding: 20px;
+  text-align: center;
+}
+
+.city-selector {
+  margin-bottom: 20px;
+}
+
+.city-selector select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  cursor: pointer;
+  position: fixed; /* или absolute */
+  top: 10px; /* Расположение сверху */
+  left: 47%; /* Центрирование по горизонтали */
+  transform: translateX(-50%); /* Смещение на половину ширины элемента влево */
+  z-index: 1000;
+}
+
+.city-card {
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.city-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.city-card h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.city-card p {
+  font-size: 18px;
+  color: #555;
+}
+
+.city-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.city-card ul li {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+}

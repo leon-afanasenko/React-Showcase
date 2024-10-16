@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #282c34;
+  color: #fff;
+  min-height: 100vh;
+  background-image: url("https://img.freepik.com/free-photo/blue-smoky-art-abstract-background_53876-110800.jpg?t=st=1723633753~exp=1723637353~hmac=fda71a18498900f90701ecc400d661176fb9efc1d23d2a6bbdf34b817668c0f8&w=1800");
+  background-size: cover;
+  z-index: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ff69b4;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ffb6c1;
+  border-radius: 10px;
+  background-color: rgba(255, 182, 193, 0.3);
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #ffb6c1;
+}
+
+.name {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #ff69b4;
+}
+
+.email {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.location {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.loading {
+  font-size: 18px;
+  color: #ff69b4;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.5);
+  background-color: #ff4d94;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

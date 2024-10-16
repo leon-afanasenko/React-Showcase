@@ -1,0 +1,11 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.header img {
+  width: 100px;
+  height: auto;
+}

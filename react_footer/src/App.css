@@ -1,0 +1,23 @@
+.app.light {
+  background-color: white;
+  color: black;
+}
+
+.header.light,
+.main-content.light,
+.footer.light {
+  background-color: white;
+  color: black;
+}
+
+.app.dark {
+  background-color: black;
+  color: white;
+}
+
+.header.dark,
+.main-content.dark,
+.footer.dark {
+  background-color: black;
+  color: white;
+}

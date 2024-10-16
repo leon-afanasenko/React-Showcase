@@ -1,0 +1,121 @@
+.cartCardContainer {
+  margin: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #bbb;
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.card:nth-child(2) {
+  margin-top: -20px;
+}
+
+.image {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.price {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0 10px 0;
+}
+
+.addButton {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 86, 179, 0.6), 0 0 20px rgba(0, 86, 179, 0.3);
+  border: 2px solid white;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modalContent button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modalContent button:hover {
+  background-color: #0056b3;
+}
+.cartContainer {
+  margin: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cartItem {
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+}

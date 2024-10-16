@@ -1,0 +1,26 @@
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav a.active {
+  font-weight: bold;
+  background-color: #ffea00;
+  color: #000;
+  border-radius: 4px;
+}
