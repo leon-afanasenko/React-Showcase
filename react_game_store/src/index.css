@@ -1,0 +1,78 @@
+:root {
+  --background-light: #ffffff;
+  --foreground-light: #000000;
+  --background-dark: #1a1a1a;
+  --foreground-dark: #ffffff;
+  --primary: #333333;
+  --primary-foreground: #ffffff;
+  --secondary: #f5a623;
+  --secondary-foreground: #333333;
+  --muted: #e0e0e0;
+  --muted-foreground: #333333;
+  --accent: #2e86de;
+  --accent-foreground: #ffffff;
+  --card: #ffffff;
+  --border: #ccc;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light {
+  --background: var(--background-light);
+  --foreground: var(--foreground-light);
+}
+
+.dark {
+  --background: var(--background-dark);
+  --foreground: var(--foreground-dark);
+}
+
+.bg-background {
+  background-color: var(--background);
+}
+
+.text-foreground {
+  color: var(--foreground);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.text-primary-foreground {
+  color: var(--primary-foreground);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.text-secondary-foreground {
+  color: var(--secondary-foreground);
+}
+
+.bg-muted {
+  background-color: var(--muted);
+}
+
+.text-muted-foreground {
+  color: var(--muted-foreground);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.text-accent-foreground {
+  color: var(--accent-foreground);
+}
+
+.bg-card {
+  background-color: var(--card);
+}
+
+.border-border {
+  border-color: var(--border);
+}

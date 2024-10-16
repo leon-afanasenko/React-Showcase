@@ -1,0 +1,36 @@
+body.light {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark .header,
+body.dark .help-section,
+body.dark .categories,
+body.dark .job-list,
+body.dark .footer {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark .link-button {
+  background-color: #004494;
+  color: #fff;
+}
+
+body.dark .link-button:hover {
+  background-color: #004494;
+}
+
+body.dark .theme-button {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark .theme-button:hover {
+  background-color: #555;
+}

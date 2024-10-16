@@ -1,0 +1,111 @@
+/* Основные стили для контейнера */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  padding: 20px;
+  border: 2px solid teal;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для заголовка */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: teal;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Стили для инпутов */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input.error {
+  border-color: red;
+}
+
+/* Стили для сообщений об ошибках */
+.error-message {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Показываем сообщения об ошибках */
+input.error + .error-message {
+  visibility: visible;
+}
+
+/* Добавляем отступ снизу, когда появляется ошибка */
+input.error {
+  margin-bottom: calc(20px + var(--error-height, 0px));
+}
+
+/* Стили для кнопок */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #005f5f;
+}
+
+/* Стили для сообщений об успехе и ошибке */
+p.success {
+  color: green;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Стили для выравнивания формы по центру экрана */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}

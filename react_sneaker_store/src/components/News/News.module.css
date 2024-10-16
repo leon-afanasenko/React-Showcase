@@ -1,0 +1,95 @@
+.newsContainer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  position: relative;
+  top: -40px;
+  left: -10px;
+}
+
+.headerLine {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contactInfo {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+  width: 300px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.input.long {
+  width: calc(100% - 20px);
+}
+
+.submitButton {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submitButton:hover {
+  opacity: 0.8;
+}
+
+.socialContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.iconContainer {
+  background-color: #fafafa;
+  width: 458px;
+  height: 221px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

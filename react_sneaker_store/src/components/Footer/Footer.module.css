@@ -1,0 +1,42 @@
+.footer {
+  background-color: #232425;
+  padding: 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.emailPlaceholder {
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.emailLink {
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.socialIcons {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.socialIcons img {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.contacts {
+  color: #ffffff;
+  margin: 0;
+}

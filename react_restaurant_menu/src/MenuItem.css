@@ -1,0 +1,66 @@
+.MenuItem {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.MenuItem:hover {
+  transform: scale(1.05);
+  background-color: #ffe0b3;
+}
+
+.MenuItem h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #000;
+}
+
+.MenuItem p {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.AddToCartButton {
+  background-color: #ff7e5f;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.AddToCartButton:hover {
+  background-color: #feb47b;
+}
+
+@media (max-width: 700px) {
+  .MenuItem {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .MenuItem {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .MenuItem {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 450px) {
+  .MenuItem {
+    padding: 5px;
+  }
+}

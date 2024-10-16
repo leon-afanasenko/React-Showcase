@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.banner {
+  width: 100%;
+  max-width: 1420px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}

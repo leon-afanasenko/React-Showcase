@@ -1,0 +1,100 @@
+.cartContainer {
+  padding: 50px;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cartContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productsList {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.productImage {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.productName {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.productPrice,
+.productQuantity {
+  margin-bottom: 5px;
+}
+
+.summary {
+  width: 200px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.summaryItem {
+  margin-bottom: 10px;
+}
+
+.removeButton {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.basketIcon {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  fill: #808080;
+  transition: fill 0.2s ease;
+}
+
+.basketIcon:hover {
+  fill: red;
+}
+
+.checkoutButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.basketIcon {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  transition: fill 0.2s ease;
+}
+
+.basketIcon:hover {
+  filter: brightness(0) saturate(100%) invert(19%) sepia(88%) saturate(5042%)
+    hue-rotate(354deg) brightness(102%) contrast(100%);
+}

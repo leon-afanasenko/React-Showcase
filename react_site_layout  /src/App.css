@@ -1,0 +1,696 @@
+/*  Переменные, общие для обоих тем */
+:root {
+  --background-color: #fffbee;
+  --text-color: #333333;
+  --primary-color: #f2c94c;
+  --secondary-color: #f2994a;
+  --hover-color: #e67e22;
+  --input-background: #fff8e1;
+  --input-border: #f2c94c;
+  --button-background: #f2c94c;
+  --button-text: #ffffff;
+  --button-hover-background: #f2994a;
+  --button-hover-border: #e67e22;
+  --header-background: #f2c94c;
+  --header-text-color: #d71212;
+  --footer-background: #333333;
+  --footer-text-color: #ffffff;
+  --link-color: #f2994a;
+  --link-hover-color: #e67e22;
+  --card-background: #ffffff;
+  --card-border: #f2c94c;
+  --card-shadow: rgba(242, 201, 76, 0.5);
+  --border-radius: 8px;
+  --scrollbar-thumb-bg: #ced4da;
+  --scrollbar-thumb-hover-bg: #adb5bd;
+  --auth-link-color-light: #d71212;
+  --auth-link-hover-color-light: #c82333;
+  --card-title-color-light: #333333;
+  --card-text-color-light: #333333;
+  --card-border-color-light: #f2c94c;
+  --more-info-color-light: #f2c94c;
+  --more-info-hover-color-light: #f2994a;
+  --table-header-color-light: #d71212;
+  --sidebar-background-light: #f2c94c;
+  --sidebar-text-color-light: #d71212;
+  --sidebar-link-hover-color-light: #e67e22;
+}
+
+/*  Переменные для темной темы */
+.dark-theme {
+  --background-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --primary-color: #fbc02d;
+  --secondary-color: #866a3f;
+  --hover-color: #f57f17;
+  --input-background: #333333;
+  --input-border: #555555;
+  --button-background: #fbc02d;
+  --button-text: #000000;
+  --button-hover-background: #f9a825;
+  --button-hover-border: #f57f17;
+  --header-background: #000000;
+  --header-text-color: #fbc02d;
+  --footer-background: #121212;
+  --footer-text-color: #e0e0e0;
+  --link-color: #f9a825;
+  --link-hover-color: #f57f17;
+  --card-background: #2c2c2c;
+  --card-border: #444444;
+  --card-shadow: rgba(0, 0, 0, 0.6);
+  --scrollbar-thumb-bg: #333333;
+  --scrollbar-thumb-hover-bg: #555555;
+  --auth-link-color-dark: #fbc02d;
+  --auth-link-hover-color-dark: #f9a825;
+  --card-title-color-dark: #e0e0e0;
+  --card-text-color-dark: #e0e0e0;
+  --card-border-color-dark: #fbc02d;
+  --more-info-color-dark: #fbc02d;
+  --more-info-hover-color-dark: #f57f17;
+  --sidebar-background: #181818;
+  --sidebar-text-color: #e0e0e0;
+  --sidebar-link-hover-color: #f57f17;
+  --table-header-color-dark: #e0e0e0;
+}
+
+/*  Общие стили */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: -50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-family: "Comic Sans MS", sans-serif;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+p {
+  margin: 0 0 15px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+/*  Кнопки */
+button {
+  background-color: var(--button-background);
+  color: var(--button-text);
+  border: 2px solid var(--button-background);
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    transform 0.3s ease;
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Comic Sans MS", sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: var(--button-hover-background);
+  border-color: var(--button-hover-border);
+  transform: scale(1.05);
+}
+
+/*  Карточки */
+.card {
+  background-color: var(--card-background);
+  border: 2px solid var(--card-border);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px var(--card-shadow);
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  background-color: var(--background-color);
+  transform: translateY(-5px);
+}
+
+/*  Заголовки и текст внутри карточек */
+.card h3 {
+  margin-top: 0;
+  color: var(--text-color);
+}
+
+.card p {
+  color: var(--text-color);
+}
+
+/*  "Узнать больше" */
+.card .more-info {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: var(--border-radius);
+  background-color: var(--more-info-color-light);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card:hover .more-info {
+  display: block;
+}
+
+/*  Подвал (footer) */
+footer {
+  background-color: var(--footer-background);
+  color: var(--footer-text-color);
+  text-align: center;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  margin-top: 40px;
+  border-top: 1px solid var(--input-border);
+}
+
+/*  Ссылки в подвале */
+footer a {
+  color: var(--footer-text-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--hover-color);
+}
+
+/*  Поиск в header */
+.header-search input[type="text"] {
+  margin-right: 10px;
+  padding: 10px;
+  border: 2px solid var(--input-border);
+  border-radius: var(--border-radius);
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.header-search button {
+  background-color: var(--button-background);
+  color: var(--button-text);
+  border: 2px solid var(--button-background);
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    transform 0.3s ease;
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+}
+
+.auth-links a {
+  color: var(--auth-link-color-light);
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  border-radius: var(--border-radius);
+}
+
+.auth-links a:hover {
+  color: var(--auth-link-hover-color-light);
+  background-color: var(--button-hover-background);
+  transform: scale(1.05);
+}
+.logo {
+  color: red;
+}
+
+/* Состояние при нажатии */
+.auth-links a:active {
+  color: var(--auth-link-hover-color-light);
+  background-color: var(--button-hover-background);
+  transform: scale(0.95);
+}
+
+.header-search button:hover {
+  background-color: var(--button-hover-background);
+  border-color: var(--button-hover-border);
+  transform: scale(1.05);
+}
+
+/*  Стили для скроллбара */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-bg);
+  border-radius: var(--border-radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover-bg);
+}
+
+/*  Стили для мобильного меню */
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+    color: var(--text-color);
+    background-color: var(--header-background);
+    padding: 10px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  header .auth-links {
+    display: none;
+  }
+  .mobile-menu .menu-item {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+  }
+
+  .mobile-menu .menu-item a {
+    color: var(--header-text-color);
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+  }
+
+  .mobile-menu .menu-item a:hover {
+    color: var(--hover-color);
+  }
+}
+
+/*  Стили для карточки с изображением */
+.card-img {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+}
+
+/*  Стили для темной темы */
+.dark-theme .card {
+  background-color: #2c2c2c;
+  border: 2px solid var(--card-border-color-dark);
+  color: var(--card-text-color-dark);
+}
+
+.dark-theme .card h3 {
+  color: var(--card-title-color-dark);
+}
+
+.dark-theme .card .more-info {
+  background-color: var(--more-info-color-dark);
+  color: #000;
+}
+
+.dark-theme .card .more-info:hover {
+  background-color: var(--more-info-hover-color-dark);
+}
+
+.dark-theme .notification {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.dark-theme .notification.error {
+  background-color: #d32f2f;
+}
+
+.dark-theme .notification.success {
+  background-color: #388e3c;
+}
+
+.dark-theme .notification.warning {
+  background-color: #fbc02d;
+  color: #212529;
+}
+
+.dark-theme .notification.info {
+  background-color: #0288d1;
+}
+
+.dark-theme .progress {
+  background-color: #333333;
+}
+
+.dark-theme .progress-bar {
+  background-color: #fbc02d;
+}
+
+.dark-theme .modal-content {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.dark-theme .modal-close {
+  color: #e0e0e0;
+}
+
+.dark-theme .header-search button {
+  border: 2px solid #fbc02d;
+}
+
+.dark-theme .header-search button:hover {
+  background-color: #f9a825;
+  border-color: #f57f17;
+}
+
+.dark-theme .category-card,
+.dark-theme .job-card {
+  background-color: #2c2c2c;
+  border: 2px solid var(--card-border-color-dark);
+  color: var(--card-text-color-dark);
+}
+
+.dark-theme .category-card h3,
+.dark-theme .job-card h3 {
+  color: var(--card-title-color-dark);
+}
+
+/*  Стили для боковой панели */
+.sidebar {
+  background-color: var(--sidebar-background-light);
+  color: var(--sidebar-text-color-light);
+  width: 250px;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.5);
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.sidebar h3 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+}
+
+.sidebar a {
+  color: var(--sidebar-text-color-light);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.sidebar a:hover {
+  color: var(--sidebar-link-hover-color-light);
+}
+
+.dark-theme .sidebar {
+  background-color: var(--sidebar-background);
+  color: var(--sidebar-text-color);
+}
+
+.dark-theme .sidebar a {
+  color: var(--sidebar-text-color);
+}
+
+.dark-theme .sidebar a:hover {
+  color: var(--sidebar-link-hover-color);
+}
+
+/*  Стили для таблицы */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid var(--input-border);
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+table th {
+  background-color: var(--primary-color);
+  color: var(--table-header-color-light);
+  text-align: left;
+}
+
+table td {
+  background-color: var(--card-background);
+}
+
+.dark-theme table th {
+  background-color: var(--primary-color);
+  color: var(--table-header-color-dark);
+  text-align: left;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Базовые стили для всех экранов */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+}
+
+header,
+.sidebar,
+.main-content {
+  transition: padding 0.3s ease;
+}
+
+.card {
+  box-sizing: border-box;
+  transition: padding 0.3s ease, width 0.3s ease;
+}
+
+table {
+  transition: font-size 0.3s ease;
+}
+
+/* Адаптивность для больших экранов */
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1200px;
+  }
+  header,
+  .sidebar,
+  .main-content {
+    padding: 20px;
+  }
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+  table {
+    font-size: 16px;
+  }
+}
+
+/* Адаптивность для экранов от 1200px до 1499px */
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .container {
+    max-width: 1000px;
+  }
+  header,
+  .sidebar,
+  .main-content {
+    padding: 15px;
+  }
+  .card {
+    width: 100%;
+    padding: 18px;
+  }
+  table {
+    font-size: 15px;
+  }
+}
+
+/* Адаптивность для экранов от 1000px до 1199px */
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .container {
+    max-width: 800px;
+  }
+  header,
+  .sidebar,
+  .main-content {
+    padding: 15px;
+  }
+  .card {
+    width: 100%;
+    padding: 16px;
+  }
+  table {
+    font-size: 14px;
+  }
+}
+
+/* Адаптивность для экранов от 800px до 999px */
+@media (min-width: 800px) and (max-width: 999px) {
+  .container {
+    max-width: 600px;
+  }
+  header,
+  .sidebar,
+  .main-content {
+    padding: 10px;
+  }
+  .card {
+    width: 100%;
+    padding: 14px;
+  }
+  table {
+    font-size: 13px;
+  }
+}
+
+/* Адаптивность для экранов от 600px до 799px */
+@media (min-width: 600px) and (max-width: 799px) {
+  .container {
+    max-width: 100%;
+  }
+  header,
+  .sidebar,
+  .main-content {
+    padding: 10px;
+  }
+  .card {
+    width: 100%;
+    padding: 12px;
+  }
+  table {
+    font-size: 12px;
+  }
+}
+
+/* Адаптивность для экранов от 450px до 599px */
+@media (min-width: 450px) and (max-width: 599px) {
+  .container {
+    padding: 10px;
+  }
+  header,
+  .sidebar,
+  .main-content {
+    padding: 8px;
+  }
+  .card {
+    width: 100%;
+    padding: 10px;
+  }
+  table {
+    font-size: 11px;
+  }
+}
+
+/* Адаптивность для экранов меньше 450px */
+@media (max-width: 449px) {
+  .container {
+    padding: 5px;
+  }
+  header,
+  .sidebar,
+  .main-content {
+    padding: 5px;
+  }
+  .card {
+    width: 100%;
+    padding: 8px;
+  }
+  table {
+    font-size: 10px;
+  }
+
+  /* Скрываем мобильное меню */
+  .mobile-menu {
+    display: block;
+  }
+  header .auth-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/* Плавные переходы и улучшение адаптивности */
+header,
+.sidebar,
+.main-content,
+.card,
+table {
+  transition: all 0.3s ease;
+}
+
+header .auth-links a {
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}

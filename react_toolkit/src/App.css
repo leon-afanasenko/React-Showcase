@@ -1,0 +1,119 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: #f5f5f7;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.notes-container {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #ffc107;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #e0a800;
+}
+
+.notes-list {
+  flex-grow: 1;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.note-item {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-item:last-child {
+  border-bottom: none;
+}
+
+.note-title {
+  font-size: 16px;
+  color: #333;
+}
+
+.note-date {
+  font-size: 12px;
+  color: #999;
+}
+
+button {
+  padding: 5px 10px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #d5d5d5;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffc107;
+  margin-bottom: 20px;
+  text-align: center;
+}

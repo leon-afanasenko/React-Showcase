@@ -1,0 +1,55 @@
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+nav a.active {
+  font-weight: bold;
+  background-color: #ffea00;
+  color: #000;
+  border-radius: 4px;
+}
+
+div.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 250px;
+  height: 75px;
+  border: 1px solid #ffea00;
+  border-radius: 12px;
+  background-color: #f4f4f4;
+  box-shadow: 1px 2px 10px grey;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+div.notification:hover {
+  background-color: #ffea00;
+  color: #000;
+}

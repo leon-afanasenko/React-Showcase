@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3b3c3d;
+  padding: 0 30px;
+  width: 100%;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  height: 110px;
+  left: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  color: #ffffff;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+}

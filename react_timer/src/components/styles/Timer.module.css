@@ -1,0 +1,133 @@
+@keyframes neonGlow {
+  0% {
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff,
+      0 0 20px #ff00ff;
+  }
+  25% {
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff,
+      0 0 20px #00ffff;
+  }
+  50% {
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00,
+      0 0 20px #00ff00;
+  }
+  75% {
+    text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00,
+      0 0 20px #ffff00;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000,
+      0 0 20px #ff0000;
+  }
+}
+
+.timerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  animation: neonGlow 10s infinite alternate;
+}
+
+.timeDisplay {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff,
+    0 0 20px #ff00ff;
+  animation: neonGlow 10s infinite alternate;
+}
+
+.timeInput {
+  font-size: 5rem;
+  width: 90px;
+  text-align: center;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #555;
+  background-color: #333;
+  color: #fff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff,
+    0 0 20px #ff00ff;
+  animation: neonGlow 10s infinite alternate;
+}
+
+.timeInput::-webkit-outer-spin-button,
+.timeInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(145deg, #333, #555);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3),
+    inset 0 -3px 0 rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: neonGlow 10s infinite alternate;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4),
+    inset 0 -3px 0 rgba(255, 255, 255, 0.3);
+}
+
+.lapsContainer {
+  margin-top: 20px;
+  width: 300px;
+  text-align: center;
+  animation: neonGlow 10s infinite alternate;
+}
+
+.lap {
+  background-color: #333;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff,
+    0 0 20px #ff00ff;
+  animation: neonGlow 10s infinite alternate;
+}
+
+.timerSelect {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(145deg, #333, #555);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3),
+    inset 0 -3px 0 rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: neonGlow 10s infinite alternate;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23fff' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.timerSelect:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4),
+    inset 0 -3px 0 rgba(255, 255, 255, 0.3);
+}

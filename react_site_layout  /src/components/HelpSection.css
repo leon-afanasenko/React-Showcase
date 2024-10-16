@@ -1,0 +1,111 @@
+.help-section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #b3e5fc, #81d4fa);
+  border-radius: 10px;
+  margin: 20px 0;
+  flex-wrap: nowrap;
+}
+
+.help-text {
+  flex: 1;
+  margin-right: 800px;
+}
+
+.help-text h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.help-text a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.help-text a:hover {
+  text-decoration: underline;
+}
+
+.link-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.link-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.link-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.help-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.help-icons a {
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.help-icons a:hover {
+  transform: scale(1.1);
+  color: #007bff;
+}
+
+.help-icons img.icon {
+  width: 40px;
+  height: auto;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1200px) {
+  .help-text {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .help-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .help-text {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .help-icons {
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .help-icons img.icon {
+    width: 30px;
+  }
+}
