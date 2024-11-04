@@ -1,1 +1,1 @@
-Просто практика REACT
+practice React
